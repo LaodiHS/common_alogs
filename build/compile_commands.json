@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hoss/Documents/algorithms/build",
+  "command": "/usr/bin/g++-9    -g   -o CMakeFiles/algorithms.dir/algorithms.cpp.o -c /home/hoss/Documents/algorithms/algorithms.cpp",
+  "file": "/home/hoss/Documents/algorithms/algorithms.cpp"
+}
+]

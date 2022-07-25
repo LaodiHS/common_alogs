@@ -1,0 +1,60 @@
+/node_modules
+./vscode
+/vscode
+.vscode
+a.out
+.git
+/.git
+/bin
+/boost
+/boost_1_70_0
+new_plates.txt
+/RadixRedux-master
+/Radix
+/lib
+/include
+/src
+/fibonacci_heap
+Makefile
+/.history
+/server_layer
+
+### C++ ###
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.pyc
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.binary
+# IDE
+.idea/
+
+boost
+
+boost_1_70_0
+
+*.out

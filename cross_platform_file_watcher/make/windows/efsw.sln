@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "efsw-static-lib", "efsw-static-lib.vcxproj", "{446B5959-2522-355B-0F32-3D32E822F7AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "efsw-test", "efsw-test.vcxproj", "{F7A9BC7F-29F1-FF62-902E-515F508C15C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{446B5959-2522-355B-0F32-3D32E822F7AE} = {446B5959-2522-355B-0F32-3D32E822F7AE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "efsw-shared-lib", "efsw-shared-lib.vcxproj", "{221884D8-3FFF-62B1-2CDE-6616AD495BD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		release|Win32 = release|Win32
+		relwithdbginfo|Win32 = relwithdbginfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{446B5959-2522-355B-0F32-3D32E822F7AE}.debug|Win32.ActiveCfg = debug|Win32
+		{446B5959-2522-355B-0F32-3D32E822F7AE}.debug|Win32.Build.0 = debug|Win32
+		{446B5959-2522-355B-0F32-3D32E822F7AE}.release|Win32.ActiveCfg = release|Win32
+		{446B5959-2522-355B-0F32-3D32E822F7AE}.release|Win32.Build.0 = release|Win32
+		{446B5959-2522-355B-0F32-3D32E822F7AE}.relwithdbginfo|Win32.ActiveCfg = relwithdbginfo|Win32
+		{446B5959-2522-355B-0F32-3D32E822F7AE}.relwithdbginfo|Win32.Build.0 = relwithdbginfo|Win32
+		{F7A9BC7F-29F1-FF62-902E-515F508C15C5}.debug|Win32.ActiveCfg = debug|Win32
+		{F7A9BC7F-29F1-FF62-902E-515F508C15C5}.debug|Win32.Build.0 = debug|Win32
+		{F7A9BC7F-29F1-FF62-902E-515F508C15C5}.release|Win32.ActiveCfg = release|Win32
+		{F7A9BC7F-29F1-FF62-902E-515F508C15C5}.release|Win32.Build.0 = release|Win32
+		{F7A9BC7F-29F1-FF62-902E-515F508C15C5}.relwithdbginfo|Win32.ActiveCfg = relwithdbginfo|Win32
+		{F7A9BC7F-29F1-FF62-902E-515F508C15C5}.relwithdbginfo|Win32.Build.0 = relwithdbginfo|Win32
+		{221884D8-3FFF-62B1-2CDE-6616AD495BD5}.debug|Win32.ActiveCfg = debug|Win32
+		{221884D8-3FFF-62B1-2CDE-6616AD495BD5}.debug|Win32.Build.0 = debug|Win32
+		{221884D8-3FFF-62B1-2CDE-6616AD495BD5}.release|Win32.ActiveCfg = release|Win32
+		{221884D8-3FFF-62B1-2CDE-6616AD495BD5}.release|Win32.Build.0 = release|Win32
+		{221884D8-3FFF-62B1-2CDE-6616AD495BD5}.relwithdbginfo|Win32.ActiveCfg = relwithdbginfo|Win32
+		{221884D8-3FFF-62B1-2CDE-6616AD495BD5}.relwithdbginfo|Win32.Build.0 = relwithdbginfo|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

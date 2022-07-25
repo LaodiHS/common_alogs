@@ -1,0 +1,10 @@
+Upload files:
+0	Update.xml
+1	Configure.xml
+2	Build.xml
+3	Test.xml
+4	Done.xml
+	Upload file: /home/hoss/Documents/algorithms/build/Testing/20200226-1650/Update.xml to hoss___Linux-c++___20200226-1650-Continuous___XML___Update.xml
+   Error when uploading file: /home/hoss/Documents/algorithms/build/Testing/20200226-1650/Update.xml
+   Error message was: 
+   Problems when submitting via HTTP

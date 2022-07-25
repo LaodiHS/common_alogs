@@ -1,0 +1,18 @@
+     public
+      long ParallelThreadLocalInterlocked()
+        {
+            int matchesTotal = 0;
+            Parallel.For(0, content.Length, () => 0, (index, _, matches) =>
+            {
+                if (content.AsSpan().Slice(index).StartsWith(keyword))
+                {
+                    return matches + 1;
+                }
+                else
+                {
+                    return matches;
+                }
+            }, matches => Interlocked.Add(ref matchesTotal, matches));
+
+            return matchesTotal;
+        }

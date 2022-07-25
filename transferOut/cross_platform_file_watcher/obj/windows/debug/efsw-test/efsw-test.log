@@ -1,0 +1,4 @@
+﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
+  efsw-test.cpp
+  efsw-test.vcxproj -> C:\Users\dickcata\Documents\algorthims\cross_platform_file_watcher\make\windows\..\..\bin\efsw-test-debug.exe
+  efsw-test.vcxproj -> ..\..\bin\efsw-test-debug.pdb (Partial PDB)

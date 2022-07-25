@@ -1,0 +1,29 @@
+﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
+  ThreadImpl.cpp
+  SystemImpl.cpp
+  MutexImpl.cpp
+  FileSystemImpl.cpp
+  WatcherWin32.cpp
+  WatcherGeneric.cpp
+  Watcher.cpp
+  Thread.cpp
+  System.cpp
+  String.cpp
+  Mutex.cpp
+  Log.cpp
+  FileWatcherWin32.cpp
+  FileWatcherImpl.cpp
+  FileWatcherGeneric.cpp
+  FileWatcherCWrapper.cpp
+  FileWatcher.cpp
+  FileSystem.cpp
+  FileInfo.cpp
+  DirWatcherGeneric.cpp
+  Generating Code...
+  Compiling...
+  DirectorySnapshotDiff.cpp
+  DirectorySnapshot.cpp
+  Debug.cpp
+  Generating Code...
+C:\Users\dickcata\Documents\algorthims\cross_platform_file_watcher\src\efsw\platform\win\FileSystemImpl.cpp(37,25): warning C4067:  unexpected tokens following preprocessor directive - expected a newline
+  efsw-static-lib.vcxproj -> C:\Users\dickcata\Documents\algorthims\cross_platform_file_watcher\make\windows\..\..\lib\efsw-static-debug.lib

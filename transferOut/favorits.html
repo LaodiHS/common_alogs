@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <style>
+        #favorits ul,
+        text {
+            margin-left: 0;
+            padding: 0;
+        }
+
+        #favorits span {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            grid-auto-rows: minmax(50px, auto);
+        }
+
+        #favorits span div {
+            display: grid;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="favorits">
+    </div>
+</body>
+
+
+
+
+
+
+
+<script>
+   
+  </script>
+
+
+
+
+<script type="text/javascript">
+    var Module = {
+      onRuntimeInitialized: function() {
+
+
+var instance = new Module.MyClass(10, "hello");
+instance.incrementX();
+instance.x; // 11
+instance.x = 20; // 20
+
+console.log(Module.MyClass.getStringFromInstance(instance)); // "hello"
+
+
+
+
+instance.delete();
+
+
+
+    
+    
+
+
+
+
+
+
+    const app = function () {
+        const modules = {};
+        return { getService, inject };
+        function inject(dependancy, module) {
+            modules[dependancy] = module
+        };
+        function getService(service) {
+            const dpendancies = {};
+            try {
+                if (Array.isArray(service)) {
+                    service.forEach(dep => {
+                        if (!modules[dep]) throw "dependency does not exist";
+                        dpendancies[dep] = modules[dep];
+                    })
+                    return dpendancies;
+                }
+
+                if (!modules[service]) throw "dependency does not exist";
+                return dpendancies[service] = modules[service];
+            } catch (err) {
+                console.error(err);
+            }
+        };
+    }
+    const applicationServices = new app()
+    applicationServices.inject("eventBus", function (response) {
+        document.addEventListener("click", event => {
+            return response(event);
+        })
+    });
+    applicationServices.inject("documentLoaded", function (response) {
+        document.addEventListener("DOMContentLoaded", event => {
+            return response(event);
+        })
+    })
+
+
+
+
+
+    class favorits {
+        constructor(DB, options, saved) {
+            this.favoritsMap = new Map();
+            this.usersMap = new Map();
+            this.parent = new Map();
+            this.parent.set("usersMap", { obj: null, map: this.usersMap })
+            this.parent.set("favoritsMap", { obj: null, map: this.favoritsMap });
+            this.parent.set("obj", document.getElementById(options));
+            this.DB = DB;
+            this.favorits = saved;
+            this.templateService = {
+                favorits: id => {
+                    const element = document.createElement("div");
+                    element.id = "fav-" + id;
+                    element.innerHTML = `<text>User :${id}</text>
+            <img src="https://picsum.photos/id/${id}/100/100"/>`;
+                    return element;
+                },
+                users: id => {
+                    const element = document.createElement("div");
+                    element.id = id; element.innerHTML = `
+            <text>User:${id}</text>
+            <img src="https://picsum.photos/id/${id}/100/100" /> 
+            <ul><button>add/remove</button></ul>
+            `;
+                    return element;
+                }
+            }
+        }
+        generateFavoritsandUsersTable({ eventBus, documentLoaded }) {
+            // documentLoaded(() => {
+                this.scafoldApp();
+                this.generateElements();
+                eventBus(element => {
+                    const target = element.target;
+                    const parent = target.closest("span");
+                    this.getContext(target, parent);
+                })
+            // });
+        }
+        scafoldApp() {
+            let favorits = { "users": "Users", "favorits": "Favorits" };
+            for (let key of Object.keys(favorits)) {
+                const doc = document.createElement("span");
+                doc.id = key;
+                this.parent.get(key + "Map").obj = doc;
+                const header = document.createElement("h1");
+                header.innerText = key[0].toUpperCase() + key.substring(1);
+                this.parent.get("obj").insertAdjacentElement("afterbegin", doc)
+                this.parent.get("obj").insertAdjacentElement("afterbegin", header);
+            }
+        }
+        generateElements() {
+            for (let id in this.favorits) {
+                const element = this.templateService.favorits(id);
+                this.favoritsMap.set(element, { id: id, obj: element });
+                this.parent.get("favoritsMap").obj.insertAdjacentElement("afterbegin", element)
+                this.favoritsMap.set("" + id, { id: id, obj: element });
+            }
+            this.DB.forEach(id => {
+                const element = this.templateService.users(id)
+                this.parent.get("usersMap").obj.insertAdjacentElement("afterbegin", element);
+                this.usersMap.set(element, { id: id, obj: element });
+                this.usersMap.set("" + id, { id: id, obj: element });
+            })
+        }
+        getContext(target, parent) {
+            const table = this.parent.get("usersMap").obj;
+            if (target.tagName === "BUTTON" && parent === table && this.usersMap.get(target.closest("div").id).obj.lastElementChild.firstChild === target) {
+                const getelementId = target.closest("div").id.toString();
+                if (this.favoritsMap.has(getelementId)) {
+                    this.favoritsMap.get(getelementId).obj.remove();
+                    delete this.favoritsMap.delete(getelementId);
+                } else {
+                    const id = target.closest("div").id;
+                    const element = this.templateService.favorits(id)
+                    this.favoritsMap.set(element, { id: id, obj: element });
+                    this.favoritsMap.set(id, { id: id, obj: element });
+                    this.parent.get("favoritsMap").obj.insertAdjacentElement("afterbegin", element);
+                }
+            }
+        }
+    }
+    const userData = [1, 2, 3, 4, 5, 6, 7];
+    const savedUserData = { 1: { id: 1, obj: null }, 2: { id: 2, obj: null } };
+    const favoritsComponents = new favorits(userData, "favorits", savedUserData);
+    favoritsComponents.generateFavoritsandUsersTable(applicationServices.getService(["eventBus", "documentLoaded"]));
+
+
+
+
+
+
+
+
+
+
+      }
+    };
+</script>
+ <script  src="quick_example.js"></script>
+</html>

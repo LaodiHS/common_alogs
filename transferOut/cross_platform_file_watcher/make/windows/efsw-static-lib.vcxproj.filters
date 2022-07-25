@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{95303955-352E-0867-AFCC-1D36F168A2D3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\efsw">
+			<UniqueIdentifier>{B2B32012-19D3-68B4-AF56-66D57AD2E04A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\efsw\platform">
+			<UniqueIdentifier>{6129E8E8-8349-B0C5-178B-9ED9B57487C6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\efsw\platform\win">
+			<UniqueIdentifier>{957136D9-FFCD-4935-1666-5C954B2146C3}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\efsw\Debug.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\DirectorySnapshot.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\DirectorySnapshotDiff.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\DirWatcherGeneric.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileInfo.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileSystem.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileWatcher.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileWatcherCWrapper.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileWatcherGeneric.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileWatcherImpl.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\FileWatcherWin32.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\Log.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\Mutex.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\String.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\System.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\Thread.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\Watcher.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\WatcherGeneric.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\WatcherWin32.cpp">
+			<Filter>src\efsw</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\platform\win\FileSystemImpl.cpp">
+			<Filter>src\efsw\platform\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\platform\win\MutexImpl.cpp">
+			<Filter>src\efsw\platform\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\platform\win\SystemImpl.cpp">
+			<Filter>src\efsw\platform\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\efsw\platform\win\ThreadImpl.cpp">
+			<Filter>src\efsw\platform\win</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

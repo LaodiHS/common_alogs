@@ -1,0 +1,298 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190430.161746.4044.001.json",
+    "dumpEventTime": "2019-04-30T16:17:46Z",
+    "processId": 4044,
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "-r",
+      "C:\\Users\\dickcata\\.vscode\\extensions\\wallabyjs.quokka-vscode-1.0.209\\dist\\wallaby\\node_modules\\esm",
+      "C:\\Users\\dickcata\\.vscode\\extensions\\wallabyjs.quokka-vscode-1.0.209\\dist\\wallaby\\server.js",
+      "runner",
+      "0",
+      "57352",
+      "quokka@1.0.0",
+      "",
+      "C:\\Users\\dickcata\\Documents\\algorthims\\node_modules",
+      ""
+    ],
+    "nodejsVersion": "v11.12.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.12.0",
+      "v8": "7.0.276.38-node.18",
+      "uv": "1.26.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.12.0/node-v11.12.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.12.0/node-v11.12.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.12.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17134",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "DESKTOP-4DS3ISL"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7378bd35e",
+      "symbol": "SSL_SESSION_get0_peer+16478"
+    },
+    {
+      "pc": "0x00007ff7378bc204",
+      "symbol": "SSL_SESSION_get0_peer+12036"
+    },
+    {
+      "pc": "0x00007ff7378bba1b",
+      "symbol": "SSL_SESSION_get0_peer+10011"
+    },
+    {
+      "pc": "0x00007ff7379a93f2",
+      "symbol": "uv_loop_fork+88258"
+    },
+    {
+      "pc": "0x00007ff737dce72e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff737dce667",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff737e82144",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14068"
+    },
+    {
+      "pc": "0x00007ff737e77f52",
+      "symbol": "v8::internal::Heap::CollectGarbage+7234"
+    },
+    {
+      "pc": "0x00007ff737e76768",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff737e80097",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5703"
+    },
+    {
+      "pc": "0x00007ff737e80116",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5830"
+    },
+    {
+      "pc": "0x00007ff737fb7fe1",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff738071ed6",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27190"
+    },
+    {
+      "pc": "0x000000b8bbe50481",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1493811200,
+    "totalCommittedMemory": 1493811200,
+    "usedMemory": 1464860232,
+    "availableMemory": 34047312,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1031168,
+        "used": 250752,
+        "available": 780416
+      },
+      "old_space": {
+        "memorySize": 1462964224,
+        "committedMemory": 1462964224,
+        "capacity": 1438416896,
+        "used": 1438374976,
+        "available": 41920
+      },
+      "code_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 815392,
+        "used": 815392,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1060864,
+        "committedMemory": 1060864,
+        "capacity": 624000,
+        "used": 624000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 26116096,
+        "committedMemory": 26116096,
+        "capacity": 57504504,
+        "used": 24761592,
+        "available": 32742912
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 49.593,
+    "kernelCpuSeconds": 1.234,
+    "cpuConsumptionPercent": 211.779,
+    "maxRss": 1538969600,
+    "pageFaults": {
+      "IORequired": 532845,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 47,
+      "writes": 111
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "APPDATA": "C:\\Users\\dickcata\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-4DS3ISL",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ESM_OPTIONS": "{\"await\":true}",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\dickcata",
+    "LOCALAPPDATA": "C:\\Users\\dickcata\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-4DS3ISL",
+    "NUMBER_OF_PROCESSORS": "8",
+    "NVM_HOME": "C:\\Users\\dickcata\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\dickcata\\OneDrive",
+    "OS": "Windows_NT",
+    "PATH": "C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\dickcata\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\dickcata\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dickcata\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\dickcata\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\dickcata\\AppData\\Roaming\\npm",
+    "Path": "C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\dickcata\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\dickcata\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dickcata\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\dickcata\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\dickcata\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "5e03",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:\\Users\\dickcata\\Documents\\algorthims",
+    "quokka": "{\"globalConfigFile\":\"C:\\\\Users\\\\dickcata\\\\.quokka\\\\config.json\",\"tempDir\":\"C:\\\\Users\\\\dickcata\\\\.quokka\\\\data\\\\vcx2x\",\"pro\":true,\"stdEsm\":true}",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\dickcata\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\dickcata\\AppData\\Local\\Temp",
+    "undefined": "",
+    "USERDOMAIN": "DESKTOP-4DS3ISL",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-4DS3ISL",
+    "USERNAME": "dickcata",
+    "USERPROFILE": "C:\\Users\\dickcata",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CWD": "C:\\Users\\dickcata\\AppData\\Local\\Programs\\Microsoft VS Code",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\d281b085cdc8684a39f2b9d3675e784f-1.33.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-cde38b1b-e01e-4c2e-a699-ca21462a6b62-sock",
+    "VSCODE_LOGS": "C:\\Users\\dickcata\\AppData\\Roaming\\Code\\logs\\20190430T075237",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\dickcata\\AppData\\Roaming\\Code\\CachedData\\51b0b28134d51361cf996d2f0a1c698247aeabd8",
+    "VSCODE_PID": "9320",
+    "VSCODE_PREVENT_FOREIGN_INSPECT": "true",
+    "WALLABY_PRODUCTION": "true",
+    "WALLABY_USE_WSL": "false",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\System32\\wshbth.dll"
+  ]
+}

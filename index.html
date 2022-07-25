@@ -1,0 +1,43 @@
+
+<body>
+
+</body>
+
+
+
+<script>
+function setup() {
+  // Write your code here.
+  
+  document.getElementById('postComment').addEventListener('click',(event)=>{
+   const commentValue = document.getElementById("comment").value
+    if(commentValue){
+    let li = document.createElement('LI');
+    li.innerText = commentValue;
+    document.getElementById("commentList").insertAdjacentElement('beforeend',li);
+      document.getElementById("comment").value ="";
+    }
+
+  })
+  
+  
+}
+document.body.innerHTML = `
+
+<ul id='commentList'>
+</ul>
+<form>
+  <input type='text' id='comment'/>
+  <input type='button' id='postComment' value='Post'/>
+</form>`;
+
+setup();
+
+document.getElementById("comment").value = "test"; 
+document.getElementById("postComment").click();
+
+
+
+console.log(document.body.innerHTML);
+
+</script>

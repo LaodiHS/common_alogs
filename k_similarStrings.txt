@@ -1,0 +1,8 @@
+abcdefgacb	babcdefgac
+bcdefgacb	bbcdefgac
+defgacb	cdefgab
+efgacb	cefgab
+fgacb	cfgab
+gacb	cgab
+acb	cab
+cb	cb
